@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="117.689" viewBox="0 0 98 117.689">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #da9c04;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #da9c04;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Professionalism_" data-name="Professionalism " transform="translate(0 0.001)">
+    <path id="Path_342" data-name="Path 342" class="cls-1" d="M-189.407,39.012a2.651,2.651,0,0,1-.76,1.855L-210.8,61.485a2.589,2.589,0,0,1-1.854.772,2.615,2.615,0,0,1-1.856-.772l-11.516-11.516a2.573,2.573,0,0,1-.772-1.855,2.611,2.611,0,0,1,.772-1.854,2.61,2.61,0,0,1,1.855-.772,2.618,2.618,0,0,1,1.868.772l8.59,8.6,1.059,1.058,18.762-18.762a2.609,2.609,0,0,1,1.855-.772,2.615,2.615,0,0,1,1.867.772A2.627,2.627,0,0,1-189.407,39.012Z" transform="translate(256.986 -1.248)"/>
+    <g id="Ellipse_51" data-name="Ellipse 51" class="cls-2" transform="translate(0 -0.001)">
+      <ellipse class="cls-4" cx="49" cy="48.5" rx="49" ry="48.5"/>
+      <ellipse class="cls-5" cx="49" cy="48.5" rx="46.5" ry="46"/>
+    </g>
+    <g id="Ellipse_52" data-name="Ellipse 52" class="cls-2" transform="translate(12 10.999)">
+      <ellipse class="cls-4" cx="37" cy="37.5" rx="37" ry="37.5"/>
+      <ellipse class="cls-5" cx="37" cy="37.5" rx="34.5" ry="35"/>
+    </g>
+    <path id="Path_369" data-name="Path 369" class="cls-3" d="M0,0V23.093l11.575-7.96,11.575,7.96V0" transform="translate(14.73 83.56) rotate(25)"/>
+    <path id="Path_370" data-name="Path 370" class="cls-3" d="M0,0V23.093l11.575-7.96,11.575,7.96V0" transform="translate(61.117 94.275) rotate(-30)"/>
+  </g>
+</svg>

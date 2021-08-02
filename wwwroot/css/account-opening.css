@@ -1,0 +1,75 @@
+﻿@import url('../lib/bootstrap/dist/css/custom/custom.css');
+
+#account-opening {
+    height: 100%;
+}
+
+.title-container {
+    padding: 20px;
+    text-align: center;
+}
+
+    .title-container > div {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .title-container .title {
+        color: var(--gold);
+        font-size: 3.11em;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "CeraBold";
+    }
+
+.paralax-body-font {
+    font-size: 1rem;
+    font-family: "CeraRegular";
+    color: #757575;
+    font-weight:bold
+}
+
+@font-face {
+    font-family: 'CeraBold';
+    src: url('../../../../../fonts/cera_pro_bold-webfont.woff') format('woff');
+}
+
+.title-container p {
+    color: #808080;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+    .card-container .card {
+        width: 47%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        border-radius: 15px;
+        flex-direction: row;
+    }
+
+        .card-container .card p {
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        .card-container .card:first-child {
+            background-color: var(--gold);
+            color: white;
+        }
+
+        .card-container .card:last-child {
+            background-color: var(--blue);
+            color: white;
+        }

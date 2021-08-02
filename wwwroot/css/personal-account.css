@@ -1,0 +1,31 @@
+﻿
+@import url('../lib/bootstrap/dist/css/custom/custom.css');
+
+#personal_account {
+    background-image: url('../images/Sitting-Guy.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% top;
+    background-size: 85%;
+}
+
+
+
+.hero-image {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    width: 27%;
+    height: 350px;
+    background-size: cover;
+    color: white;
+    padding-left: 50px;
+    font-family: CeraMedium
+}
+
+.gold-title{
+    margin: 20px 0;
+}

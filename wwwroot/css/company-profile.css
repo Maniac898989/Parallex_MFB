@@ -1,0 +1,9 @@
+﻿@import url('../lib/bootstrap/dist/css/custom/custom.css');
+
+#hero {
+    background-color: grey;
+    background-position: center;
+    background-image: url('../images/boardroom.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

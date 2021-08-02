@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Parallex_MFB</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/bootstrap/dist/css/custom/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div style="background-color: #1F007D">
+            <nav class="navbar navbar-expand-md container" >
+                <a class="navbar-brand" href="#">
+                    <img src="~/images/Logo.png" width="170" height="47" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                    <div class="ml-auto">
+                        <button class="btn paralax-btn-outline-yellow btn-lg my-2 my-sm-0 paralax-nav-barlink-font">Open Account</button>
+                        <button class="btn paralax-btn-outline-transparent btn-lg my-2 my-sm-0 paralax-nav-barlink-font">Internet Banking <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div style="background-color: #FFF">
+            <nav class="navbar navbar-expand-lg container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link paralax-nav-barlink-font" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PERSONAL BANKING <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link paralax-nav-barlink-font" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BUSINESS BANKING <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link paralax-nav-barlink-font" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ABOUT US <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link paralax-nav-barlink-font" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CONTACT US <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        @*<li class="nav-item dropdown">
+                            <a class="nav-link paralax-nav-barlink-font">
+                                <i class="fas fa-search"></i>
+                            </a>
+                          
+                        </li>*@
+
+                    </ul>
+
+
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="paralax-foooter footer-font-bold">
+        <div class="container-fluid" style=" background-color: #1F007D">
+
+            <div class="row col-md-12 mr-auto " style="padding-top:100px">
+                <div class="col-md-3">
+                    <div>
+                        <img src="~/images/Logo.png" style="max-width:205px" />
+                    </div>
+                    <img src="~/images/Footer Background Logo.png" style="max-width:260px" />
+                </div>
+                <div class="col-md-2">
+                    <p>Personal Banking</p>
+                    <p><a class="paralax-footer-link-regular" href="#">Account</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Cards</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">More On Products && Services</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Loans</a></p>
+                </div>
+                <div class="col-md-2">
+                    <p>Business Banking</p>
+                    <p><a class="paralax-footer-link-regular" href="#">Business Accounts</a></p>
+                </div>
+                <div class="col-md-auto">
+                    <p>About Us</p>
+                    <p><a class="paralax-footer-link-regular" href="#">Vision/Mission, Values</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Company Profile</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Board of Directors</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Exco Members</a></p>
+                </div>
+                <div class="col-md-auto">
+                    <p>Contact Us</p>
+                    <p class="paralax-footer-link-regular">Plot 1261, Adeola Hopewell Street, V.I, Lagos</p>
+                    <a href="mailto:customercare@parallexbankng.com"><p class="footer-gold-text">customercare@parallexbankng.com</p></a>
+                    <a href="tel:070072725539"><p class="footer-gold-text">0700 727 25539</p></a>
+                    <a href="tel:09121804317"><p class="footer-gold-text">0912 180 4317</p></a>
+                    <a href="tel:09121921226"><p class="footer-gold-text">0912 192 1226</p></a>
+                    <a href="tel:09122722067"><p class="footer-gold-text">0912 272 2067</p></a>
+                </div>
+            </div>
+            <hr class="hr-footer" />
+            <div class="container">
+                <div class="row">
+                    <div class="row col-md-3 ">
+                        <p class="paralax-footer-font" href="#">&copy 2020 All right reserved | Parallex Bank</p>
+                    </div>
+                    <div class="row col-md-6 justify-content-center">
+                        <a class="paralax-footer-font" href="#"> Terms & Conditions &nbsp;</a>
+                        <br />
+                        <a class="paralax-footer-font" href="#"> &nbsp; |&nbsp; Privacy Policy &nbsp; </a>
+                        
+                        <a class="paralax-footer-font" href="#">&nbsp; | &nbsp; Sitemap</a>
+                    </div>
+                    <div class="row col-md-3" style="justify-content: space-evenly;">
+
+                        <a class="paralax-footer-font" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="paralax-footer-font" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="paralax-footer-font" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="paralax-footer-font" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+               
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

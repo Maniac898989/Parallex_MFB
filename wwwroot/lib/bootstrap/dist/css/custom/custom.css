@@ -1,0 +1,595 @@
+﻿
+@font-face {
+    font-family: 'CeraBold';
+    src: url('../../../../../fonts/cera_pro_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CeraRegular';
+    src: url('../../../../../fonts/cera_pro_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CeraMedium';
+    src: url('../../../../../fonts/cera_pro_medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CeraLight';
+    src: url('../../../../../fonts/cera_pro_light-webfont.woff') format('woff');
+}
+
+:root {
+    --gold: #DA9C04;
+    --blue: #1F007D;
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+    color: white;
+}
+
+.bg-blue {
+    background-color: var(--blue);
+    background-color: blue;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+/*ul {
+    padding-left: 0;
+    list-style-position: inside;
+    color: #757575;
+}*/
+
+ul.list-gold {
+    list-style: none;
+    font-family: CeraRegular
+}
+
+    ul.list-gold li::before {
+        content: "\2022";
+        color: var(--gold);
+        display: inline-block;
+        width: 1em;
+        font-weight: 700;
+        font-size: 1.5em;
+        font-family:CeraRegular
+    }
+
+
+
+.section-padding {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.paralax-nav-text {
+    color: #da9c04 !important;
+}
+
+.paralax-nav-bar {
+    background-color: #1F007D;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+a.paralax-navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: #da9c04;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.paralex-navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.paralax-navbar-nav {
+    display: -ms-flexbox;
+    display: inline-block;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+    .paralax-navbar-nav .paralax-nav-link {
+        display: -ms-flexbox;
+        display: inline-block;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+.paralax-btn-outline-transparent {
+    color: #FFF;
+    border-color: #FFF;
+    border-radius: 0.5rem;
+}
+
+.paralax-btn-outline-yellow {
+    color: #FFF;
+    border-color: #da9c04;
+    background-color: #da9c04;
+    border-radius: 0.5rem;
+}
+
+.paralax-btn-outline-yellow-body {
+    color: #FFF;
+    border-color: #da9c04;
+    background-color: #da9c04;
+    border-radius: 0.5rem;
+}
+
+    .paralax-btn-outline-yellow-body:hover {
+        color: #FFF;
+        text-decoration: none;
+        background-color: #001B71;
+        border-color: #001B71;
+    }
+
+.paralax-btn-outline-yellow:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.paralax-btn-outline-transparent:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.paralax-btn-outline-yellow-reverse {
+    color: #da9c04;
+    border-color: #da9c04;
+    background-color: #FFF;
+    border: 2.1px solid;
+    border-radius: 0.5rem;
+}
+
+    .paralax-btn-outline-yellow-reverse:hover {
+        color: #da9c04;
+        text-decoration: none;
+        background-color: #FFEEC9;
+        border-color: #da9c04;
+    }
+
+.paralax-justify-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.paralax-i-arrow {
+    margin-left: 9px;
+    margin-right: 9px
+}
+
+.header-font {
+    font-size: 40px;
+    font-family: "CeraBold";
+    margin-left: 54px;
+}
+
+.header-font-carousel {
+    font-size: 40px;
+    font-family: "CeraBold";
+    margin-left: 54px;
+}
+
+.inner-page-header-font {
+    font-size: 40px;
+    font-family: "CeraBold";
+}
+
+.inner-page-header-font-orange {
+    font-size: 30px;
+    font-family: "CeraBold";
+    color: #da9c04;
+}
+
+.header-font-card {
+    font-size: 25px;
+    font-family: "CeraBold";
+}
+
+.footer-font-bold {
+    font-size: 16px;
+    font-family: "CeraBold";
+    color: #FFF
+}
+
+a.paralax-footer-link-regular {
+    font-size: .9rem;
+    font-family: "CeraRegular";
+    color: #FFF
+}
+
+p.paralax-footer-link-regular {
+    font-size: .9rem;
+    font-family: "CeraRegular";
+    color: #FFF
+}
+
+.paralax-body-font {
+    font-size: 1rem;
+    font-family: "CeraRegular";
+    color: #757575
+}
+
+.paralax-body-font-inner {
+    font-size: 1rem;
+    font-family: "CeraRegular";
+    color: #FFF
+}
+
+.paralax-body-font-two {
+    font-size: 0.9rem;
+    font-family: "CeraRegular";
+    margin: 21px;
+}
+
+.paralax-nav-barlink-font {
+    font-size: 1rem;
+    font-family: "CeraMedium";
+}
+
+.paralax-breadcrum {
+    font-size: 0.9rem;
+    font-family: CeraLight;
+}
+
+.btn-parallex {
+    text-align: center;
+    border-radius: 5px;
+    font-size: inherit;
+    display: inline-block;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.btn-parallex-primary {
+    background-color: var(--gold);
+    transition: background-color .5s;
+    color: white;
+    font-family:CeraBold
+}
+
+    .btn-parallex-primary > span[class^="fa"] {
+        margin: 0 15px;
+    }
+
+    .btn-parallex-primary:hover {
+        background: var(--blue);
+        color: white;
+    }
+
+.btn-parallex-primary-outline {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.paralax-card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.7rem - 1px);
+    border-top-right-radius: calc(0.7rem - 1px);
+}
+
+.paralax-rounded-card-edge {
+    border-radius: 0.7rem !important;
+}
+
+a.paralax-nav-barlink-font {
+    color: #1F007D;
+}
+
+a.header-font {
+    color: #da9c04;
+    text-decoration: underline
+}
+
+.paralax-foooter {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    white-space: nowrap;
+    line-height: 23px;
+    height: 2em;
+}
+
+.paralax-footer-row {
+    margin-right: 0px;
+    display: flex;
+    margin-left: -15px;
+    flex-wrap: wrap
+}
+
+.paralax-app-dim {
+    max-width: 311px;
+    margin-right: 50px;
+}
+
+.paralax-header-container {
+    max-width: 100%;
+    overflow: hidden
+}
+
+.paralax-header-image-restriction {
+    width: 100%;
+    object-fit: cover;
+    height: 310px;
+}
+
+
+.paralax-header-text {
+    position: absolute;
+    color: #FFF;
+    top: 283px;
+    left: 6%;
+    transform: translate(-50px, -50px);
+    font-size: 60px
+}
+
+/*Card Corner*/
+.card-img-top {
+    position: absolute;
+    top: -108px;
+    left: 50%;
+    margin-left: -102px;
+    width: 200px !important;
+    height: 200px;
+}
+
+.paralex-card {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.paralex-card-text:last-child {
+    margin: 30px
+}
+
+.paralex-card-title {
+    margin-bottom: 1.75rem;
+    margin-top: 7rem;
+}
+
+.header-title, .hero-title, title {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 20px 0;
+    font-family: "CeraBold";
+}
+
+title-primary {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero-text {
+    color: #757575;
+    font-family: 'CeraMedium';
+}
+
+#carousel-section {
+    background-color: #F4F2F2 !important;
+}
+
+    #carousel-section .header-title {
+        margin: 15px 0;
+    }
+
+    #carousel-section .btn-parallex-primary {
+        padding-right: 15px;
+        padding-left: 15px;
+        display: inline-block;
+        width: 200px;
+        line-height: 15px;
+        font-family: "CeraBold";
+    }
+
+    #carousel-section .carousel-item {
+        height: 75vh;
+    }
+
+        #carousel-section .carousel-item > .container {
+            height: 75vh;
+            display: flex;
+            align-items: center;
+        }
+
+    #carousel-section ul {
+        margin: 30px 0;
+    }
+
+        #carousel-section ul li {
+            font-weight: lighter;
+            font-size: 1em;
+            font-family: "CeraMedium";
+            color: #3D3D3D
+        }
+
+    #carousel-section .carousel-item-1 {
+        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
+        background: url('../../../../../images/DSC_2662.png') no-repeat;
+        background-position: 80% top;
+        background-size: 40%;
+    }
+
+    #carousel-section .carousel-item-2 {
+        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
+        background: url('../../../../../images/DSC_2622.png') no-repeat;
+        background-position: 70% top;
+        background-size: 25%;
+    }
+
+    #carousel-section .carousel-item-3 {
+        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
+        background: url('../../../../../images/DSC_2795.png') no-repeat;
+        background-position: 80% top;
+        background-size: 30%;
+    }
+
+    #carousel-section .carousel-content {
+        width: 50%;
+        padding: 30px 0;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    #carousel-section .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+    }
+
+    #carousel-section .carousel-control-next, .carousel-control-prev {
+        color: var(--blue);
+        width: 8%;
+    }
+
+    #carousel-section .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+        
+    }
+
+.card-deck p {
+    color: #757575;
+}
+
+.card-body {
+    padding: 2em;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: #333 !important;
+}
+
+    .breadcrumb a {
+        font-weight: 600;
+        color: #333 !important;
+    }
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '\003E';
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+
+.paralex-margin-inner-pages {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 66px;
+}
+
+.paralex-margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header-font-card-bullet {
+    font-size: 25px;
+    font-family: "CeraBold";
+    font-weight: bold;
+    color: #DA9C04
+}
+
+li.paralax-body-font {
+    color: #000000;
+    font-size: 1rem;
+    font-family: "CeraRegular";
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #ff6a00
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: 0px;
+    margin-bottom: 12px;
+    font-family: "CeraBold"
+}
+
+.hr-footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 0.5px solid #F3F3F1;
+}
+
+.footer-gold-text {
+    color: #DA9C04;
+    font-size: .9rem;
+    font-family: "CeraRegular";
+}
+
+    .footer-gold-text:hover {
+        color: #FFF;
+        text-decoration: underline
+    }
+
+.paralax-footer-font {
+    font-size: 0.7rem;
+    font-family: CeraLight;
+    color: #FFF;
+}
+
+    .paralax-footer-font:hover {
+        color: #DA9C04;
+        text-decoration: underline;
+    }
+
+.paralax-footer-link-regular:hover {
+    color: #DA9C04;
+    text-decoration: underline
+}

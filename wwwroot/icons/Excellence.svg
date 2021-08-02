@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="95" viewBox="0 0 96 95">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #da9c04;
+        stroke-width: 5px;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Excellence_" data-name="Excellence " transform="translate(-930 -2985)">
+    <path id="Union_2" data-name="Union 2" class="cls-1" d="M26.078,36.676,9.262,50.874l7.045-21.313L0,17.345l20.4-.184L26.078,0l5.637,17.059,20.438-.186L35.734,29.219l7.158,21.656Z" transform="translate(951.991 3007.276)"/>
+    <g id="Ellipse_53" data-name="Ellipse 53" class="cls-2" transform="translate(930 2985)">
+      <ellipse class="cls-3" cx="48" cy="47.5" rx="48" ry="47.5"/>
+      <ellipse class="cls-4" cx="48" cy="47.5" rx="45.5" ry="45"/>
+    </g>
+  </g>
+</svg>

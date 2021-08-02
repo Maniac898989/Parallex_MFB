@@ -1,0 +1,223 @@
+﻿@page
+@model IndexModel
+@{ ViewData["Title"] = "Home page"; }
+
+@* 869px *@
+
+<section id="carousel-section">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active carousel-item-1">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1 class="header-title"> Welcome to banking without limits</h1>
+                        <ul>
+                            <li>
+                                Open an account with zero balance
+                            </li>
+                            <li>We'll send your ATM card to you'</li>
+                            <li>Save, Spend, Secure loans with ease'</li>
+                        </ul>
+                        <button class="btn btn-parallex btn-parallex-primary">
+                            Get Started
+                            <span class="fa fa-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item carousel-item-2">
+                <div class="container">
+                    <div class="carousel-content ">
+                        <h1 class="header-title"> Let your money work for you</h1>
+                        <ul>
+                            <li>
+                                Open an account with zero balance
+                            </li>
+                            <li>We'll send your ATM card to you'</li>
+                            <li>Save, Spend, Secure loans with ease'</li>
+                        </ul>
+                        <button class="btn btn-parallex btn-parallex-primary">
+                            Find Out More
+                            <span class="fa fa-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-3">
+                <div class="container">
+                    <div class="carousel-content ">
+                        <h1 class="header-title"> Get what you need, when you need it</h1>
+                        <ul>
+                            <li>
+                                Open an account with zero balance
+                            </li>
+                            <li>We'll send your ATM card to you'</li>
+                            <li>Save, Spend, Secure loans with ease'</li>
+                        </ul>
+                        <button class="btn btn-parallex btn-parallex-primary">
+                            Find Out More
+                            <span class="fa fa-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</section>
+
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="@Url.Content("~/images/DSC_2913.jpg")" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-6 paralax-justify-items">
+                <div>
+                    <p class="header-font-card">Get An Account</p>
+                    <p class="paralax-body-font">Live life on your own terms with our P Current account and enjoy zero charge on transactions, no account maintenance charge, free card delivery to your registered address and 3% per annuminterest on monthly average balance. No need to go to a branch, you can open a P Current account now!</p>
+                    <button class="btn paralax-btn-outline-yellow-body my-2 my-sm-0 paralax-nav-barlink-font">Open my Account</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section style="background-color: #F8F8F8" class="section-padding">
+    <div class="container ">
+        <div class="header-font">
+            <p>Accounts</p>
+        </div>
+        <div class="card-deck paralax-card-deck">
+            <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title header-font-card">Current Account</h5>
+                    <p class="card-text paralax-body-font">Do you need help in choosing a Chequing Account? Our array of Current Accounts provides you with just the right account in only a few minutes.</p>
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                    <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+
+                </div>
+            </div>
+            <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title header-font-card">Savings Account</h5>
+                    <p class="card-text paralax-body-font">Saving for tomorrow has become much easier with our array of high interest and low charges savings accounts.</p>
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                    <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+
+                </div>
+            </div>
+            <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title header-font-card">Fixed Income Account</h5>
+                    <p class="card-text paralax-body-font">To keep you earning on your excess funds, whether in local or foreign currency, the following accounts provide maximum value on your idle funds.</p>
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                    <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+
+                </div>
+            </div>
+
+        </div>
+        <div style="margin-top:30px">
+            <div class="card-deck paralax-card-deck">
+                <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                    <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title header-font-card">Cards</h5>
+                        <p class="card-text paralax-body-font">We offer the Verve Debit cards, pre-funded MasterCard, Debit MasterCard and Credit Cards.</p>
+                    </div>
+                    <div class="card-footer text-muted mx-auto">
+                        <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+
+                    </div>
+                </div>
+                <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                    <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title header-font-card">Personal Loans</h5>
+                        <p class="card-text paralax-body-font">Our personal loans provide you with the right financing for your personal needs while guaranteeing you all the security you are looking for.</p>
+                    </div>
+                    <div class="card-footer text-muted mx-auto">
+                        <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+
+                    </div>
+                </div>
+                <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                    <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title header-font-card">Business Banking Products</h5>
+                        <p class="card-text paralax-body-font">Experience the advantages of being with Nigeria’s truly Digital Bank, and take advantage of…</p>
+                    </div>
+                    <div class="card-footer text-muted mx-auto">
+                        <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="paralex-margin">
+    <div class="container">
+        <div class="row col-md-12 paralex-margin" style="background-color: #FFF">
+            <p class="header-font"><a class="header-font" href="#">Click Here</a> To Get Started</p>
+        </div>
+    </div>
+</section>
+
+
+<section style="background-color: #F8F8F8" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 paralex-margin">
+                <div class="row">
+                    <img src="~/images/Devices.png" width="200" height="200" style="margin-left:145px" />
+                </div>
+
+            </div>
+            <div class="col-md-8 paralex-margin">
+                <p class="header-font-card">Download Parallex App</p>
+
+                <div class="row">
+                    <div class="row col-md-12">
+                        <a href="#"><img class="shadow mb-5 bg-white rounded paralax-app-dim" src="~/images/Google.png" /></a>
+                        <a href="#"><img class="shadow mb-5 bg-white rounded paralax-app-dim" src="~/images/Apple.png" /></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
