@@ -1,6 +1,7 @@
 ﻿@page
 @model IndexModel
-@{ ViewData["Title"] = "Home page"; }
+@{
+    ViewData["Title"] = "Home page"; }
 
 @* 869px *@
 
@@ -8,8 +9,8 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active carousel-item-1">
@@ -51,20 +52,20 @@
             </div>
             <div class="carousel-item carousel-item-3">
                 <div class="container">
-                    <div class="carousel-content ">
+                    <article class="carousel-content ">
                         <h1 class="header-title"> Get what you need, when you need it</h1>
                         <ul>
                             <li>
                                 Open an account with zero balance
                             </li>
-                            <li>We'll send your ATM card to you'</li>
-                            <li>Save, Spend, Secure loans with ease'</li>
+                            <li>We'll send your ATM card to you</li>
+                            <li>Save, Spend, Secure loans with ease</li>
                         </ul>
                         <button class="btn btn-parallex btn-parallex-primary">
                             Find Out More
                             <span class="fa fa-arrow-right"></span>
                         </button>
-                    </div>
+                    </article>
                 </div>
 
             </div>
@@ -86,7 +87,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 incomplete">
                 <img src="@Url.Content("~/images/DSC_2913.jpg")" class="d-block w-100" alt="...">
             </div>
             <div class="col-md-6 paralax-justify-items">
@@ -190,7 +191,7 @@
 
 <section class="paralex-margin">
     <div class="container">
-        <div class="row col-md-12 paralex-margin" style="background-color: #FFF">
+        <div class="row" style="background-color: #FFF">
             <p class="header-font"><a class="header-font" href="#">Click Here</a> To Get Started</p>
         </div>
     </div>
@@ -202,11 +203,11 @@
         <div class="row">
             <div class="col-md-4 paralex-margin">
                 <div class="row">
-                    <img src="~/images/Devices.png" width="200" height="200" style="margin-left:145px" />
+                    <img class="appimage" src="~/images/Devices.png" width="200" height="200" />
                 </div>
 
             </div>
-            <div class="col-md-8 paralex-margin">
+            <div class="col-md-8 app-logo paralex-margin">
                 <p class="header-font-card">Download Parallex App</p>
 
                 <div class="row">
