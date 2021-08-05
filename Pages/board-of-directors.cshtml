@@ -2,6 +2,8 @@
 @model Parallex_MFB.Web.Pages.boardModel
 @{
 }
+@Html.AntiForgeryToken();
+
 <div class="container-fluid paralax-header-container">
 
     <div class="row">
@@ -42,43 +44,49 @@
 </div>
 
 <div class="row paralex-margin-inner-pages justify-content-center" style="margin-top:150px">
-
     <div class="row text-center col-md-4">
         <div class="col-lg-4">
             <div class="card shadow mb-5" style="width: 20rem; height:28rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
+                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/Chiarman.png" alt="Card image cap">
                 <div class="card-block">
-                    <p class="paralex-card-title header-font-card">Pastor Olufemi Akintayo Otenigbagbe.</p>
-                    <p class="card-position">Managing Director/CEO</p>
-                    <p class="paralex-card-text paralax-body-font-two">He is a professional and a highly qualified Manager offering more than twenty one years (21) years of working experience in the job market with eleven years...</p>
+                    <p class="paralex-card-title header-font-card-bod name">Dr. Adeola Adejoke Philips</p>
+                    <p class="card-position position">The Chairman</p>
+                    <p class="paralex-card-text paralax-body-font-two details">
+                        Dr. Phillips holds a Bachelor of Medicine and Bachelor of Surgery (M.B.B.S) from the University of Lagos, Akoka.
+                        She has C-level executive management experience with expertise in Strategic, Operational & Financial Plann...
+                    </p>
+                    <button type="button" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center col-md-4">
+        <div class="col-lg-4">
+            <div class="card shadow mb-5" style="width: 20rem; height:28rem; background-color:#F6F6F6">
+                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/MD.png" alt="Card image cap">
+                <div class="card-block">
+                    <p class="paralex-card-title header-font-card-bod">Olufemi Bakare</p>
+
+                    <p class="card-position">Managing Director</p>
+                    <p class="paralex-card-text paralax-body-font-two">
+                        Olufemi Bakre is a visionary leader with over 32 years of banking experience that cuts across the Multilateral Business, Foreign and Local Financial Institutions, Public Sector, Corporate & Retail Banking and Customer Relationship Management
+                    </p>
                     <button type="button" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More</button>
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="row text-center col-md-4">
-        <div class="col-lg-4">
-            <div class="card shadow mb-5" style="width: 20rem; height:28rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
-                <div class="card-block">
-                    <p class="paralex-card-title header-font-card">Dr Deola Philips, Chairperson (MBBS)</p>
-                    <p class="card-position">Institute of Directors</p>
-                    <p class="paralex-card-text paralax-body-font-two">She attended University Of Lagos, College Of Medicine, Lagos where she bagged a degree in Medicine, Surgery in 1994. She is a Director, CEO and...</p>
-                    <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="row text-center col-md-4">
         <div class="col-lg-4">
             <div class="card shadow mb-5" style="width: 20rem; height:28rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
+                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/INED.png" alt="Card image cap">
                 <div class="card-block">
-                    <p class="paralex-card-title header-font-card">Mrs. Modupeade Isesele (NIM)</p>
-                    <p class="card-position">Institute of Directors</p>
-                    <p class="paralex-card-text paralax-body-font-two">Mrs. Modupeade Isesele is a professional with several years of experience in commercial Banking. She graduated from University of Benin in 1988...</p>
+                    <p class="paralex-card-title header-font-card-bod">Okpokor (Okor) Ezewu</p>
+                    <p class="card-position">Independent Non-Executive Director</p>
+                    <p class="paralex-card-text paralax-body-font-two">Mr. Ezewu has over 36 years’ post-graduation work experience at the Central Bank of Nigeria (CBN). He is a seasoned economist, financial analyst and a certified bank examiner. His experience cut across operations...</p>
                     <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More</button>
                 </div>
             </div>
@@ -91,11 +99,11 @@
     <div class="row text-center col-md-4">
         <div class="col-lg-4">
             <div class="card shadow mb-5" style="width: 20rem; height:26rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
+                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/NED.png" alt="Card image cap">
                 <div class="card-block">
-                    <p class="paralex-card-title header-font-card">Rev Tom Amenkhienan</p>
-                    <p class="card-position">Institute of Directors</p>
-                    <p class="paralex-card-text paralax-body-font-two">Rev. Tom Amenkhienan is graduate of Bendel State University (now Ambrose Alli University). He graduated wih a B.SC in Sociology in 1989...</p>
+                    <p class="paralex-card-title header-font-card-bod">Vale Odu-Thomas</p>
+                    <p class="card-position">Non-Executive Director</p>
+                    <p class="paralex-card-text paralax-body-font-two">Mr. Vale Odu-Thomas is a professional with several years of experience. He graduated from Obafemi Awolowo University with a Bachelor Of Science in Quantity Surveying...</p>
                     <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More</button>
                 </div>
             </div>
@@ -104,17 +112,16 @@
     <div class="row text-center col-md-4">
         <div class="col-lg-4">
             <div class="card shadow mb-5" style="width: 20rem; height:26rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
+                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/ANED.png" alt="Card image cap">
                 <div class="card-block">
-                    <p class="paralex-card-title header-font-card">Mr. Vale Odu-Thomas</p>
-                    <p class="card-position">Institute of Directors</p>
-                    <p class="paralex-card-text paralax-body-font-two">Mr. Vale Odu-Thomas is a professional with several years of experience in Quantity Surveying. He graduated from Obafemi Awolowo University...</p>
+                    <p class="paralex-card-title header-font-card-bod">Rev Tom Amenkhienan</p>
+                    <p class="card-position">Non-Executive Director</p>
+                    <p class="paralex-card-text paralax-body-font-two">Tom holds a Bachelor of Science degree in Sociology from the then Bendel State University (now Ambrose Alli University Ekpoma). He has a varied experience, leading Non-Governmental...</p>
                     <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More</button>
                 </div>
             </div>
         </div>
     </div>
-
 
 
 </div>
@@ -123,24 +130,31 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="~/images/Logo.png" />
-                    </div>
-                    <div class="col-md-8 ml-auto">
-                        <h2>This is the main header</h2>
-                        <h5>This is his appointment</h5>
-                        <p>This is the main gist</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="~/images/BOD/ANED.png" width="100%" />
+                        </div>
+                        <div class="col-md-10">
+                            <p class="mainheader paralax-body-font-two">This is his name</p>
+                            <p class="appointmentHeader paralax-body-font-two">This is his appointment</p>
+                            <p class="paralax-body-font-two">
+                                Tom holds a Bachelor of Science degree in Sociology from the then Bendel State University (now Ambrose Alli University Ekpoma). He has a varied experience, leading Non-Governmental Organizations (NGOs), as well as international TV broadcasting operations.
+                                He is a member of the Institute of Directors (IoD). He chairs the Boards of Prime Feeds, Flour Mills and Loveworld Plus – one of the foremost 24hrs Satellite TV Stations in Africa.  Tom is also the Chairman of Innercity Mission for Children - an Internationally recognized NGO, dedicated to breaking the cycle of poverty, by delivering a sustainable solution to the problem of urban and rural child poverty.
+                                Tom is, indeed, making a mark in the social sector.
+                                He was a member of the Board of Directors of Parallex Micro Finance Bank, during which he headed the Credit Committee. He also served as a member of the Information & Technology Steering Committee, set up by the board. He is a member of the Board of Trustees, Believers Love World and also serves as a director of Loveworld USA – a foremost satellite TV station in the United States of America.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="row ">
-                    
-                    
-                </div>
+
+
             </div>
-            
-           
+
+
         </div>
     </div>
 </div>
 
+
+<script src="~/js/parallex.js"></script>
