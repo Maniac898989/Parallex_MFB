@@ -1,0 +1,47 @@
+﻿@import url('../lib/bootstrap/dist/css/custom/custom.css');
+
+.paralax-header-container {
+    background: url('../images/boardroom.png') no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 100%;
+}
+
+.director-card {
+    padding: 10px;
+    background-color: #F6F6F6;
+    box-shadow: 2px 1px 5px rgba(0,0,0,0.2) !important;
+    margin-top: 5em !important;
+    margin-bottom: 5em !important;
+    padding-bottom: 2em;
+}
+
+    .director-card img {
+        border: 3px solid white;
+    }
+
+    .director-card button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        color: var(--blue);
+        font-family:CeraRegular;
+        font-weight:500;
+        padding: 10px 20px;
+    }
+
+        .director-card button:hover {
+            background-color: var(--blue);
+            color: white;
+        }
+
+        .director-card button > span {
+            margin-left: 20px;
+        }
+
+.director-container {
+    padding: 80px 0;
+}

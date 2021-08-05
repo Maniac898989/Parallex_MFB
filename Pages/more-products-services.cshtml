@@ -2,15 +2,26 @@
 @model Parallex_MFB.Web.Pages.moreproductsservicesModel
 @{
 }
+
+<style>
+    .paralax-header-container {
+        background: url('../images/building-13.jpg') no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        background-size: 100%;
+    }
+
+    .wealthbeing{
+        height: 300px;
+        padding:20px 0;
+    }
+</style>
+
 <div class="container-fluid paralax-header-container">
 
     <div class="row">
-
-        <img class="paralax-header-image-restriction" src="~/images/boardroom.png" />
-
         <div class="container paralax-header-text paralax-nav-barlink-font">
             <p class="header-font">More On Products &#38; Services </p>
-
         </div>
 
     </div>
@@ -20,25 +31,28 @@
 <section class="section-padding paralax-breadcrum">
     <div class="container">
         <div class="row">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Personal Banking</a></li>
-                    <li class="breadcrumb-item"><a href="#">More On Products and Services</a></li>
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Personal Banking</a></li>
+                        <li class="breadcrumb-item"><a href="#">More On Products and Services</a></li>
 
-                </ol>
-            </nav>
+                    </ol>
+                </nav>
+            </div>
         </div>
     </div>
 </section>
 
-<div class="container paralex-margin-inner-pages">
-    <div class="row col-md-8">
-        <p class="inner-page-header-font ">WealthBeing Products</p>
-        <p class="paralax-body-font">
-            Life insurance, General insurance, Savings & Investment, Retirement Savings Account, Wills and Education Investment Plan.
-        </p>
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 wealthbeing">
+            <p class="inner-page-header-font  ">WealthBeing Products</p>
+            <p class="paralax-body-font">
+                Life insurance, General insurance, Savings & Investment, Retirement Savings Account, Wills and Education Investment Plan.
+            </p>
+        </div>
 
     </div>
 

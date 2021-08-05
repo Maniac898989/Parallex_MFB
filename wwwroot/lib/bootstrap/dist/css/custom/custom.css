@@ -350,7 +350,118 @@ a.header-font {
     bottom: 0;
     white-space: nowrap;
     line-height: 23px;
-    height: 2em;
+    background-color: #1F007D !important;
+    color: white;
+    background: url('../../../../../images/Footer Background Logo.png') no-repeat;
+    background-position: -150px 150px;
+    background-size: 40%;
+}
+
+    .paralax-foooter .header-title {
+        font-family: CeraRegular;
+        font-size: 1em;
+        color: white;
+        position: relative;
+    }
+
+        .paralax-foooter .header-title > span[class^="fa fa-"] {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            cursor: pointer;
+            display: none;
+        }
+
+    .paralax-foooter ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .paralax-foooter a {
+        font-size: .9rem;
+        font-family: "CeraRegular";
+        color: #FFF;
+        display: block;
+        padding: 10px 0;
+    }
+
+        .paralax-foooter a.text-gold {
+            color: var(--gold);
+        }
+
+
+    .paralax-foooter .copy_right {
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+    }
+
+        .paralax-foooter .copy_right > div {
+            border-top: 1px solid white;
+            padding: 25px 0;
+        }
+
+        .paralax-foooter .copy_right p {
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .paralax-foooter .copy_right a.paralax-footer-font {
+            display: inline-block !important;
+        }
+
+.paralax-footer-spacing {
+    padding: 8% 0;
+}
+
+/* typical phone screen resolution */
+@media only screen and (max-width : 667px) {
+
+    .paralax-foooter img {
+        margin-bottom: 22px;
+    }
+
+    .paralax-foooter .container {
+        width: 100%;
+    }
+
+        .paralax-foooter .container .col {
+            margin: 0;
+            padding: 0;
+        }
+
+    .paralax-foooter .header-title > span[class^="fa fa-"] {
+        display: block;
+    }
+
+    .paralax-foooter a {
+        border-top: 1px solid #6574b0;
+        border-bottom: 1px solid #6574b0;
+    }
+
+    .paralax-foooter .copy_right a {
+        display: inline-block;
+        border: none;
+        text-align: center;
+    }
+
+    .paralax-foooter .copy_right p {
+        justify-content: center;
+    }
+
+    .paralax-foooter ul {
+        display: none;
+    }
+}
+/* landscape orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+}
+/* portrait orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
 }
 
 .paralax-footer-row {
@@ -367,23 +478,66 @@ a.header-font {
 
 .paralax-header-container {
     max-width: 100%;
-    overflow: hidden
+    overflow: hidden;
+    min-height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: flex;
+    align-items: center;
+    color: white;
 }
+
+    .paralax-header-container p.header-font {
+        font-size: 2.9em;
+        font-family: CeraRegular;
+    }
 
 .paralax-header-image-restriction {
     width: 100%;
     object-fit: cover;
     height: 310px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
-.paralax-header-text {
-    position: absolute;
-    color: #FFF;
-    top: 283px;
-    left: 6%;
-    transform: translate(-50px, -50px);
-    font-size: 60px
+/*.paralax-header-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}*/
+
+/* typical phone screen resolution */
+@media only screen and (max-width : 667px) {
+    .paralax-header-text {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 5px;
+        padding: 10px;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    p.header-font {
+        margin-left: 0;
+        margin: 15px 0;
+    }
+
+    .paralax-header-container {
+        background-size: cover !important;
+    }
+}
+/* landscape orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+}
+/* portrait orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
 }
 
 /*Card Corner*/
@@ -614,10 +768,14 @@ li.paralax-body-font {
     text-decoration: underline
 }
 
+footer .terms_conditions a {
+    display: inline-block;
+    border: none;
+    text-align: center;
+}
 
 /*Hamburger*/
 /* Icon 1 */
-
 .animated-icon1, .animated-icon2, .animated-icon3 {
     width: 30px;
     height: 20px;
@@ -843,7 +1001,7 @@ li.paralax-body-font {
         background: rgba(255, 255, 255, 0.8);
     }
 
-    
+
     #carousel-section .carousel-indicators li {
         width: 10px;
         height: 10px;
@@ -910,7 +1068,6 @@ li.paralax-body-font {
     p.header-font {
         font-size: 26px;
         font-family: "CeraBold";
-        margin-left: 36px;
     }
 
     .paralex-margin {
@@ -936,5 +1093,78 @@ li.paralax-body-font {
     }
 }
 
+/* Sub Menu Section*/
+.sub-menu {
+    /*display: flex;*/
+    flex-direction: row;
+    overflow: auto;
+    height: 350px;
+    background-color: #F3F3F1;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 40px 40px 1px rgba(0,0,0,.3);
+    border: none;
+    right: 300px;
+    width: 800px;
+    margin-left: -200px;
+}
+
+    .sub-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sub-menu ul a {
+            font-size: 14px;
+            font-family: CeraRegular !important;
+            padding: 15px;
+            display: inline-block;
+            position: relative;
+        }
+
+            .sub-menu ul a:hover {
+                color: var(--gold);
+                background: none;
+            }
 
 
+            .sub-menu ul a i.icon {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--gold);
+            }
+
+    .sub-menu section {
+        flex-grow: 1;
+        padding: 7px 0;
+    }
+
+        .sub-menu section:first-child {
+            background-color: white;
+        }
+
+            .sub-menu section:first-child a:hover {
+                background-color: var(--gold);
+                color: white;
+            }
+
+                .sub-menu section:first-child a:hover i.icon {
+                    color: white;
+                }
+
+
+        .sub-menu section:last-child {
+            flex-grow: 5;
+        }
+
+.sub-menu-item:not(:first-child) {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* End Sub Menu Section*/

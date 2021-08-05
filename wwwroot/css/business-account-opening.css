@@ -2,7 +2,6 @@
 @import url('../lib/bootstrap/dist/css/custom/custom.css');
 
 #personal_account {
-    
     background-image: url('../images/sitting-girl.jpg');
     background-repeat: no-repeat;
     background-position: 100% top;
@@ -15,7 +14,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
 }
 
 .hero-content {
@@ -27,11 +26,30 @@
     font-family: CeraMedium
 }
 
-.gold-title{
+.gold-title {
     margin: 20px 0;
 }
 
-ul.list-gold::before{
-    content:none;
-    margin:0;
+ul.list-gold::before {
+    content: none;
+    margin: 0;
+}
+
+/* typical phone screen resolution */
+@media only screen and (max-width : 667px) {
+    .hero-content {
+        width: 100% !important;
+        padding: 20px;
+    }
+
+    .hero-image{
+        min-height: 200px;
+        height: 200px;
+    }
+}
+/* landscape orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+}
+/* portrait orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
 }
