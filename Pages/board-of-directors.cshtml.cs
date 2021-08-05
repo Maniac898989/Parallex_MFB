@@ -12,20 +12,22 @@ namespace Parallex_MFB.Web.Pages
 {
     public class boardModel : PageModel
     {
-        private readonly IAntiforgery _xsrf;
+        //private readonly IAntiforgery _xsrf;
 
-        public boardModel(IAntiforgery xsrf)
-        {
-            _xsrf = xsrf ?? throw new ArgumentNullException(nameof(xsrf));
-        }
+        //public boardModel(IAntiforgery xsrf)
+        //{
+        //    _xsrf = xsrf ?? throw new ArgumentNullException(nameof(xsrf));
+        //}
+        [BindProperty]
+        public string position { get; set; }
         public void OnGet()
         {
         }
 
-        public JsonResult OnPostSaveInfo(string position)
+        public JsonResult OnPostSaveInfo(PosiModel position)
         {
             
-            if(position == "The Chairman")
+            if(position.Position == "The Chairman")
             {
                 var info = System.IO.File.ReadAllText(@"~/bod_details/Ezewu.txt");
 
@@ -33,5 +35,12 @@ namespace Parallex_MFB.Web.Pages
             }
             return new JsonResult(new Result { IsSuccssful = true });
         }
+
+
+    }
+
+    public class PosiModel
+    {
+        public string Position { get; set; }
     }
 }

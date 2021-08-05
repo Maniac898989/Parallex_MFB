@@ -3,6 +3,7 @@
 $('.btn').on("click", function () {
     var name = $('.name').text();
     var position = $('.position').text();
+    var parameter = { "position": position }
     console.log(position);
 
     $.ajax({
@@ -10,10 +11,10 @@ $('.btn').on("click", function () {
         url: "?handler=SaveInfo",
         beforeSend: function (xhr) {
             xhr.setRequestHeader("XSRF-TOKEN", $('input:hidden[name="__RequestVerificationToken"]').val())
-        },  
-        data: JSON.stringify({ position: position }) ,
+        },
+        data: parameter,
         contentType: "application/json; charset=utf-8",
-        dataType: "json",
+        dataType: 'json',
         success: function (res) {
             console.log(res);
             alert(res);
