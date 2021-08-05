@@ -25,6 +25,7 @@ namespace Parallex_MFB
         {
             services.AddRazorPages()
                 .AddRazorRuntimeCompilation();
+            services.AddAntiforgery(options => options.HeaderName = "XSRF-TOKEN");
 
         }
 
