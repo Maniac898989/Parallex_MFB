@@ -626,17 +626,17 @@ title-primary {
     }
 
     #carousel-section .carousel-item {
-        height: 75vh;
+        height: 80vh;
     }
 
         #carousel-section .carousel-item > .container {
-            height: 75vh;
+            height: 80vh;
             display: flex;
             align-items: center;
         }
 
     #carousel-section ul {
-        margin: 30px 0;
+        margin: 10px 0;
     }
 
         #carousel-section ul li {
@@ -646,25 +646,32 @@ title-primary {
             color: #3D3D3D
         }
 
+        .carousel-font {
+            font-weight: lighter;
+            font-size: 1em;
+            font-family: "CeraMedium";
+            color: #3D3D3D
+        }
+
     #carousel-section .carousel-item-1 {
-        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
-        background: url('../../../../../images/DSC_2662.png') no-repeat;
-        background-position: 80% top;
-        background-size: 40%;
+        
+        background: url('../../../../../images/carouselReversed.jpg') no-repeat;
+        background-position: 100% top;
+        background-size:100%;
     }
 
     #carousel-section .carousel-item-2 {
-        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
-        background: url('../../../../../images/DSC_2622.png') no-repeat;
-        background-position: 70% top;
-        background-size: 25%;
+        
+        background: url('../../../../../images/CarouselTwo.jpg') no-repeat;
+        background-position: 100% top;
+        background-size: 100%;
     }
 
     #carousel-section .carousel-item-3 {
-        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
-        background: url('../../../../../images/DSC_2795.png') no-repeat;
-        background-position: 80% top;
-        background-size: 30%;
+        
+        background: url('../../../../../images/sitting-girl.jpg') no-repeat;
+        background-position: 100% top;
+        background-size: 100%;
     }
 
     #carousel-section .carousel-content {
