@@ -5,13 +5,11 @@ using System.Threading.Tasks;
 
 namespace Parallex_MFB.Web.Models
 {
-    public class Result
+    public class Result<T>
     {
         public bool IsSuccssful;
         public string Message;
-        public object ReturnedObject;
-        public string ReturnedCode;
-        public byte[] ByteProperty;
-           
+        public T ReturnedObject;
+        public string ReturnedCode;           
     }
 }

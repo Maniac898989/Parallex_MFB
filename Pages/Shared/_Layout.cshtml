@@ -373,14 +373,6 @@
                 const menuId = e.currentTarget.getAttribute('data-menu');
                 $('#' + menuId).slideToggle('fast');
             })
-
-            $('.sub-menu-item a').hover(function (e) {
-                const menuId = e.currentTarget.getAttribute('data-menu');
-                console.log(e);
-
-                if (menuId === undefined || menuId === '') return;
-                $('#' + menuId).toggleClass('hide');
-            })
         });
     </script>
 

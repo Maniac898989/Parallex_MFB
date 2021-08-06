@@ -37,7 +37,7 @@ namespace Parallex_MFB.Web.Pages
 
                 return new JsonResult(info);
             }
-            return new JsonResult(new Result { IsSuccssful = true });
+            return new JsonResult(new Result<object> { IsSuccssful = true });
         }
 
         public async Task<JsonResult> OnGetDirectorInfo(string name)
