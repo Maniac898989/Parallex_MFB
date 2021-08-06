@@ -1110,39 +1110,11 @@ footer .terms_conditions a {
 .dropdown-menu {
     height: 300px;
     background-color: white;
-    border-radius:0;
+    border-radius: 0;
+    border: none;
+    box-shadow: 3px 7px 14px rgba(0,0,0,.3);
+    margin-left: -50px;
 }
-
-    .dropdown-menu li a {
-        display: inline-block;
-        position: relative;
-        font-size: 14px;
-        text-decoration: none;
-        padding: 10px 15px;
-        width: 100%;
-        color: #333;
-    }
-
-    .dropdown-menu a i[class^="fa fa"] {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 15px;
-        color: var(--gold);
-    }
-
-    .dropdown-menu a:hover {
-        background-color: var(--gold);
-        color: white;
-    }
-
-        .dropdown-menu a:hover [class^="fa fa"]{
-            color:white;
-        }
-
-        .dropdown-menu a:hover ul ul {
-            display: block !important;
-        }
 
     .dropdown-menu ul {
         list-style: none;
@@ -1154,19 +1126,53 @@ footer .terms_conditions a {
         width: 230px;
     }
 
-        .dropdown-menu ul ul {
-            left: 100%;
+    .dropdown-menu a {
+        display: inline-block;
+        position: relative;
+        font-size: 13px;
+        text-decoration: none;
+        padding: 10px 15px;
+        width: 100%;
+        color: #333;
+        font-family: CeraRegular, sans-serif;
+    }
+
+        .dropdown-menu a i[class^="fa fa"] {
             position: absolute;
-            top: 0;
-            height: 100%;
-            background-color: #F3F3F1;
-            visibility:hidden;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            color: var(--gold);
         }
 
-        .dropdown-menu ul ul a:hover{
+        .dropdown-menu a:hover {
+            background-color: var(--gold);
+            color: white;
+        }
+
+            .dropdown-menu a:hover [class^="fa fa"] {
+                color: white;
+            }
+
+
+    .dropdown-menu ul ul {
+        left: 100%;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-color: #F3F3F1;
+        display: none;
+    }
+
+        .dropdown-menu ul ul a:hover {
             background-color: transparent;
             color: var(--gold);
         }
+
+    .dropdown-menu li:hover > ul{
+        display: block;
+    }
+
 
 
 /*End of Section for navigation*/
