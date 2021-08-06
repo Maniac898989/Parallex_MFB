@@ -3,14 +3,18 @@
 @{
 }
 
-<div class="container-fluid paralax-header-container">
+@Html.AntiForgeryToken()
+
+<link href="~/css/directors.css" rel="stylesheet" />
+
+
+<div class="container paralax-header-container">
 
     <div class="row">
-
-        <img class="paralax-header-image-restriction" src="~/images/boardroomMod-min.png" />
-
-        <div class="container paralax-header-text paralax-nav-barlink-font">
-            <p class="header-font">Board Of Directors</p>
+        <div class="col-md-6 col-md-12">
+            <div class="container paralax-header-text paralax-nav-barlink-font">
+                <p class="header-font">Exco Members</p>
+            </div>
         </div>
     </div>
 
@@ -19,105 +23,197 @@
 <section class="section-padding paralax-breadcrum">
     <div class="container">
         <div class="row">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">About Us</a></li>
-                    <li class="breadcrumb-item"><a href="#">Board Of Directors</a></li>
+            <div class="col-md-12 col-xl-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-page="/~">Home</a></li>
+                        <li class="breadcrumb-item"><a asp-page="/about-us">About Us</a></li>
+                        <li class="breadcrumb-item"><a href="#">Exco Members</a></li>
 
-                </ol>
-            </nav>
+                    </ol>
+                </nav>
+            </div>
         </div>
     </div>
 </section>
 
-<div class="container paralex-margin-inner-pages">
-    <div class="row col-md-8">
-        <p class="inner-page-header-font ">Board Of Directors</p>
-        <p class="paralax-body-font">The Company's overall corporate policy is determined by a six member Board of Directors which is chaired by Dr. Deola Okeowo. The Board takes decisions on policy matters aimed at meeting the Company s goals and objectives.</p>
+
+<div class="container director-container exco-bg">
+    <div class="row">
+
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/MD.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">OLUFEMI BAKRE</p>
+                        <p class="card-position">Managing Director</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Olufemi Bakre is a visionary leader with over 32 years of banking experience that cuts across the Multilateral Business, Foreign and Local Financial Institutions, Public Sec...</p>
+                        <button fileName="olufemi.json" type="button" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">BOLA IBRAHIM</p>
+                        <p class="card-position">Chief Finance Officer</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">
+                            Bola Ibrahim has over 20 years of banking experience with hands-on experience which spans through Banking Operations, Internal Control, Internal Audit, Risk Management...
+                        </p>
+                        <button fileName="bola.json" id="butto" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+
+            <div class="card shadow mb-5 exco-card">
+                <div class="text-center">
+
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">AYODEJI ABIMBOLA</p>
+                        <p class="card-position">
+                            Head, Treasury & Institutional Banking
+                        </p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Ayodeji Abimbola was the Group Treasurer at Nova Merchant Bank Limited where he was responsible for the bank’s treasury and balance sheet management strategy...</p>
+                        <button fileName="ayodeji.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row paralex-margin">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">WASIU POPOOLA</p>
+                        <p class="card-position">Head, Digital and Innovation</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Wasiu Popoola is a seasoned Digital transformation and Fintech professional with over 16 years of digital banking experience. Prior to his appointment...</p>
+                        <button fileName="wasiu.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center ">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow  rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">NELSON AGBONIFO</p>
+                        <p class="card-position">Head, Internal Control</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Nelson Agbonifo is a professional Banker with over two decades of banking experience in Internal Control, IT Audit, Operations, Compliance, Financial Control...</p>
+                        <button fileName="nelson.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center ">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow  rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">SEYI OGUNDIPE</p>
+                        <p class="card-position">Head, Internal Audit</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Seyi Ogundipe has over 20 years of experience across professional practice and banking. He started his professional career with Ernst & Young (EY) International...</p>
+                        <button fileName="seyi.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row paralex-margin">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">SAHEED ALAMUTU</p>
+                        <p class="card-position">Chief Risk Officer</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Saheed has over 20 years of banking experience. Prior to his appointment, he was the Group Head of Enterprise Risk Management (ERM) at FCMB, where...</p>
+                        <button fileName="saheed.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center ">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow  rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">ISIOMA  GOGO-ANAZODO</p>
+                        <p class="card-position">
+                            Chief Compliance Officer
+                        </p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Isioma Gogo-Anazodo has over 28 years’ experience in Banking, Audit and Accounting. She started her career with Coopers & Lybrand...</p>
+                        <button fileName="isioma.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center ">
+
+                <div class="card shadow mb-5 exco-card">
+                    <img class="card-img-top img-circle card-shadow  rounded-circle" src="@Url.Content("~/images/BOD/avi.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">CHIKA IDIGO</p>
+                        <p class="card-position">Head, Legal Services </p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Chika is a distinguished corporate and commercial law expert. In 2017, Chika was appointed the Company Secretary and Legal Adviser of Specialized Resolution...</p>
+                        <button fileName="chika.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
 
-<div class="row paralex-margin-inner-pages justify-content-center" style="margin-top:150px">
-    <div class="row text-center col-md-4">
-        <div class="col-lg-4">
-            <div class="card shadow mb-5" style="width: 20rem; height:28rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/Chiarman.png" alt="Card image cap">
-                <div class="card-block">
-                    <p class="paralex-card-title header-font-card-bod name">Dr. Adeola Adejoke Philips</p>
-                    <p class="card-position position">The Chairman</p>
-                    <p class="paralex-card-text paralax-body-font-two details">
-                        Dr. Phillips holds a Bachelor of Medicine and Bachelor of Surgery (M.B.B.S) from the University of Lagos, Akoka.
-                        She has C-level executive management experience with expertise in Strategic, Operational & Financial Plann...
-                    </p>
-                    <button type="button" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More</button>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2" id="imagesource">
+                            <img src="" width="100%" />
+                        </div>
+                        <div class="col-md-10">
+                            <p class="mainheader header-font-card-bod" id="exco_name" style="padding-left:9px"></p>
+                            <p class="appointmentHeader card-position" id="exco_position" style="padding-left:20px"></p>
+                            <div id="exco_info">
+                                <p class="paralax-body-font-two">
+                                    America.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row text-center col-md-4">
-        <div class="col-lg-4">
-            <div class="card shadow mb-5" style="width: 20rem; height:28rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/MD.png" alt="Card image cap">
-                <div class="card-block">
-                    <p class="paralex-card-title header-font-card-bod">Olufemi Bakare</p>
-
-                    <p class="card-position">Managing Director</p>
-                    <p class="paralex-card-text paralax-body-font-two">
-                        Olufemi Bakre is a visionary leader with over 32 years of banking experience that cuts across the Multilateral Business, Foreign and Local Financial Institutions, Public Sector, Corporate & Retail Banking and Customer Relationship Management
-                    </p>
-                    <button type="button" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More</button>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row text-center col-md-4">
-        <div class="col-lg-4">
-            <div class="card shadow mb-5" style="width: 20rem; height:28rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/INED.png" alt="Card image cap">
-                <div class="card-block">
-                    <p class="paralex-card-title header-font-card-bod">Okpokor (Okor) Ezewu</p>
-                    <p class="card-position">Independent Non-Executive Director</p>
-                    <p class="paralex-card-text paralax-body-font-two">Mr. Ezewu has over 36 years’ post-graduation work experience at the Central Bank of Nigeria (CBN). He is a seasoned economist, financial analyst and a certified bank examiner. His experience cut across operations...</p>
-                    <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
-<div class="row paralex-margin justify-content-center" style="margin-top:150px">
-
-    <div class="row text-center col-md-4">
-        <div class="col-lg-4">
-            <div class="card shadow mb-5" style="width: 20rem; height:26rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/NED.png" alt="Card image cap">
-                <div class="card-block">
-                    <p class="paralex-card-title header-font-card-bod">Vale Odu-Thomas</p>
-                    <p class="card-position">Non-Executive Director</p>
-                    <p class="paralex-card-text paralax-body-font-two">Mr. Vale Odu-Thomas is a professional with several years of experience. He graduated from Obafemi Awolowo University with a Bachelor Of Science in Quantity Surveying...</p>
-                    <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row text-center col-md-4">
-        <div class="col-lg-4">
-            <div class="card shadow mb-5" style="width: 20rem; height:26rem; background-color:#F6F6F6">
-                <img class="card-img-top img-circle rounded-circle" src="~/images/BOD/ANED.png" alt="Card image cap">
-                <div class="card-block">
-                    <p class="paralex-card-title header-font-card-bod">Rev Tom Amenkhienan</p>
-                    <p class="card-position">Non-Executive Director</p>
-                    <p class="paralex-card-text paralax-body-font-two">Tom holds a Bachelor of Science degree in Sociology from the then Bendel State University (now Ambrose Alli University Ekpoma). He has a varied experience, leading Non-Governmental...</p>
-                    <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
-</div>
+<script src="~/js/exco.js"></script>

@@ -25,8 +25,8 @@
             <div class="col-md-12 col-xl-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">About Us</a></li>
+                        <li class="breadcrumb-item"><a asp-page="/~">Home</a></li>
+                        <li class="breadcrumb-item"><a asp-page="/about-us">About Us</a></li>
                         <li class="breadcrumb-item"><a href="#">Board Of Directors</a></li>
 
                     </ol>
@@ -52,42 +52,47 @@
             <div class="text-center">
 
                 <div class="card shadow mb-5 director-card">
-                    <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/Chiarman.png")" alt="Card image cap">
                     <div class="card-block">
-                        <p class="paralex-card-title header-font-card">Pastor Olufemi Akintayo Otenigbagbe.</p>
-                        <p class="card-position">Managing Director/CEO</p>
-                        <p class="paralex-card-text paralax-body-font-two">He is a professional and a highly qualified Manager offering more than twenty one years (21) years of working experience in the job market with eleven years...</p>
+                        <p class="paralex-card-title-bod header-font-card-bod">Dr. ADELOLA ADEJOKE PHILIPS</p>
+                        <p class="card-position">The Chiarman</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">
+                            Dr. Phillips holds a Bachelor of Medicine and Bachelor of Surgery (M.B.B.S) from the University of Lagos, Akoka.
+                            She has C-level executive management experience...
+                        </p>
+                        <button fileName="dr_adeola.json"  class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center">
+
+                <div class="card shadow mb-5 director-card">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/MD.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">OLUFEMI BAKRE</p>
+                        <p class="card-position">Managing Director</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Olufemi Bakre is a visionary leader with over 32 years of banking experience that cuts across the Multilateral Business, Foreign and Local Financial Institutions, Public Sec...</p>
                         <button fileName="olufemi.json" type="button" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="text-center">
 
-                <div class="card shadow mb-5 director-card">
-                    <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
-                    <div class="card-block">
-                        <p class="paralex-card-title header-font-card">Dr Adeola Philips, Chairperson (MBBS)</p>
-                        <p class="card-position">Institute of Directors</p>
-                        <p class="paralex-card-text paralax-body-font-two">She attended University Of Lagos, College Of Medicine, Lagos where she bagged a degree in Medicine, Surgery in 1994. She is a Director, CEO and...</p>
-                        <button fileName="adeola.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12">
 
             <div class="card shadow mb-5 director-card">
                 <div class="text-center">
 
-                    <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/INED.png")" alt="Card image cap">
                     <div class="card-block">
-                        <p class="paralex-card-title header-font-card">Mrs. Modupeade Isesele (NIM)</p>
-                        <p class="card-position">Institute of Directors</p>
-                        <p class="paralex-card-text paralax-body-font-two">Mrs. Modupeade Isesele is a professional with several years of experience in commercial Banking. She graduated from University of Benin in 1988...</p>
-                        <button fileName="modupeade.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
+                        <p class="paralex-card-title-bod header-font-card-bod">OKPOKOR (OKOR) EZEWU</p>
+                        <p class="card-position">Independent Non-Executive Director</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Mr. Ezewu has over 36 years’ post-graduation work experience at the Central Bank of Nigeria (CBN). He is a seasoned economist, financial analyst and a certified...</p>
+                        <button fileName="okpokor.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
                     </div>
                 </div>
             </div>
@@ -96,35 +101,35 @@
     </div>
 
     <div class="row paralex-margin">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center">
 
+                <div class="card shadow mb-5 director-card">
+                    <img class="card-img-top img-circle card-shadow rounded-circle" src="@Url.Content("~/images/BOD/NED.png")" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="paralex-card-title-bod header-font-card-bod">VALE ODU-THOMAS</p>
+                        <p class="card-position">Institute of Directors</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Mr. Vale Odu-Thomas is a professional with several years of experience. He graduated from Obafemi Awolowo University with a Bachelor Of Science in Quantity Surveying...</p>
+                        <button fileName="vale.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0">Read More <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="text-center ">
 
                 <div class="card shadow mb-5 director-card">
-                    <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
+                    <img class="card-img-top img-circle card-shadow  rounded-circle" src="@Url.Content("~/images/BOD/ANED.png")" alt="Card image cap">
                     <div class="card-block">
-                        <p class="paralex-card-title header-font-card">Rev Tom Amenkhienan</p>
+                        <p class="paralex-card-title-bod header-font-card-bod">THOMAS EHIS AMENKHIENAN</p>
                         <p class="card-position">Institute of Directors</p>
-                        <p class="paralex-card-text paralax-body-font-two">Rev. Tom Amenkhienan is graduate of Bendel State University (now Ambrose Alli University). He graduated wih a B.SC in Sociology in 1989...</p>
+                        <p class="paralex-card-text paralax-body-font-two pb-20">Tom holds a Bachelor of Science degree in Sociology from the then Bendel State University (now Ambrose Alli University Ekpoma). He has a varied experience...</p>
                         <button fileName="tom.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg">Read More <span class="fa fa-arrow-right"></span></button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="text-center">
 
-                <div class="card shadow mb-5 director-card">
-                    <img class="card-img-top img-circle rounded-circle" src="https://dummyimage.com/100x100/000/fff" alt="Card image cap">
-                    <div class="card-block">
-                        <p class="paralex-card-title header-font-card">Mr. Vale Odu-Thomas</p>
-                        <p class="card-position">Institute of Directors</p>
-                        <p class="paralex-card-text paralax-body-font-two">Mr. Vale Odu-Thomas is a professional with several years of experience in Quantity Surveying. He graduated from Obafemi Awolowo University...</p>
-                        <button fileName="vale.json" class="btn paralax-btn-outline-yellow my-2 my-sm-0" >Read More <span class="fa fa-arrow-right"></span></button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 </div>
@@ -135,12 +140,12 @@
             <div class="modal-body">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-2">
-                            <img src="~/images/BOD/ANED.png" width="100%" />
+                        <div class="col-md-2" id="imagesource">
+                            <img src="" width="100%" />
                         </div>
                         <div class="col-md-10">
-                            <p class="mainheader paralax-body-font-two" id="director_name">This is his name</p>
-                            <p class="appointmentHeader paralax-body-font-two" id="director_position">This is his appointment</p>
+                            <p class="mainheader header-font-card-bod" id="director_name" style="padding-left:9px"></p>
+                            <p class="appointmentHeader card-position" id="director_position" style="padding-left:20px"></p>
                             <div id="director_info">
                                 <p class="paralax-body-font-two">
                                     Tom holds a Bachelor of Science degree in Sociology from the then Bendel State University (now Ambrose Alli University Ekpoma). He has a varied experience, leading Non-Governmental Organizations (NGOs), as well as international TV broadcasting operations.
@@ -151,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                </div
+                </div>
             </div>
         </div>
     </div>

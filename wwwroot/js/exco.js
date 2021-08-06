@@ -1,11 +1,9 @@
-﻿//var baseurl = "https://localhost:44342/"
-
-$('.btn').on("click", function (e) {
-     const fname = e.currentTarget.getAttribute("fileName");
+﻿$('.btn').on("click", function (e) {
+    const fname = e.currentTarget.getAttribute("fileName");
 
     $.ajax({
         type: "GET",
-        url: "?handler=DirectorInfo&name=" + fname,
+        url: "?handler=ExcoInfo&name=" + fname,
         beforeSend: function (xhr) {
             xhr.setRequestHeader("XSRF-TOKEN", $('input:hidden[name="__RequestVerificationToken"]').val())
         },
@@ -17,15 +15,15 @@ $('.btn').on("click", function (e) {
                     let json = JSON.parse(res.message);
 
                     if (json != undefined) {
-                        var info = $('#director_info');
+                        var info = $('#exco_info');
                         info.empty();
 
                         json.details.forEach(d => {
                             info.append('<p class="paralax-body-font-two">' + d + '</p>');
                         });
 
-                        $('#director_name').text(json.name);
-                        $('#director_position').text(json.position);
+                        $('#exco_name').text(json.name);
+                        $('#exco_position').text(json.position);
                         $('#imagesource').children('img').attr('src', json.src);
 
                         $('.bd-example-modal-lg').modal({
@@ -44,4 +42,3 @@ $('.btn').on("click", function (e) {
         }
     })
 })
-

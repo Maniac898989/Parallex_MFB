@@ -198,6 +198,19 @@ a.paralax-navbar-brand {
     border-radius: 0.5rem;
 }
 
+a:not([href]):not([tabindex]) {
+    color: #da9c04;
+}
+
+    a:not([href]):not([tabindex]):hover {
+        color: #da9c04;
+    }
+
+
+.card-shadow {
+    box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.4) !important
+}
+
 .appimage {
     margin-left: 145px;
 }
@@ -249,6 +262,10 @@ a.paralax-navbar-brand {
     font-family: "CeraBold";
 }
 
+.pb-20{
+    padding-bottom:20px
+}
+
 .header-font-card-bod {
     font-size: 20px;
     font-family: "CeraBold";
@@ -292,6 +309,11 @@ p.paralax-footer-link-regular {
 }
 
 .paralax-nav-barlink-font {
+    font-size: 1rem;
+    font-family: "CeraMedium";
+}
+
+.paralax-nav-barlink-font-btn {
     font-size: 1rem;
     font-family: "CeraMedium";
 }
@@ -343,6 +365,10 @@ p.paralax-footer-link-regular {
 
 a.paralax-nav-barlink-font {
     color: #1F007D;
+}
+
+a.paralax-nav-barlink-font-btn {
+    color: #FFF;
 }
 
 .card-position {
@@ -515,7 +541,7 @@ a.header-font {
 
     .paralax-header-container p.header-font {
         font-size: 2.9em;
-        font-family: CeraRegular;
+        font-family: CeraBold;
     }
 
 .paralax-header-image-restriction {
@@ -589,6 +615,11 @@ a.header-font {
     margin-top: 7rem;
 }
 
+.paralex-card-title-bod {
+    margin-top: 7rem;
+    margin-bottom: 0.15rem;
+}
+
 .header-title, .hero-title, title {
     color: var(--gold);
     font-weight: bold;
@@ -617,6 +648,15 @@ title-primary {
     }
 
     #carousel-section .btn-parallex-primary {
+        padding-right: 15px;
+        padding-left: 15px;
+        display: inline-block;
+        width: 200px;
+        line-height: 15px;
+        font-family: "CeraBold";
+    }
+
+    .a .btn-parallex-primary {
         padding-right: 15px;
         padding-left: 15px;
         display: inline-block;

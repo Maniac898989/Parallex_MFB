@@ -14,8 +14,8 @@
     <header>
         <div style="background-color: #1F007D">
             <nav class="navbar navbar-expand-md navbar-padding">
-                <a class="navbar-brand" href="#">
-                    <img class="logo" src="~/images/Logo.png" alt="">
+                <a class="navbar-brand" href="@Url.Content("~/")">
+                    <img class="logo" src="@Url.Content("~/images/Logo.png")" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fas fa-bars hamburger"></i></span>
@@ -23,7 +23,7 @@
 
                 <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                     <div class="ml-auto">
-                        <button class="btn paralax-btn-outline-yellow btn-lg my-2 my-sm-0 paralax-nav-barlink-font">Open Account</button>
+                        <a asp-page="/account-opening" class="btn paralax-btn-outline-yellow btn-lg my-2 my-sm-0 paralax-nav-barlink-font-btn">Open Account</a>
                         <button class="btn paralax-btn-outline-transparent btn-lg my-2 my-sm-0 paralax-nav-barlink-font">Internet Banking <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
                     </div>
                 </div>
@@ -83,40 +83,40 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/savings-account">
                                                     Savings Account
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
                                                 <ul id="loans" class="sub-menu-item hide">
                                                     <li>
-                                                        <a class="dropdown-item" href="#" data-menu="">
-                                                            Classic Current Account
+                                                        <a class="dropdown-item"  asp-page="/savings-account" data-menu="">
+                                                            Classic Savings Account
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#" data-menu="">
-                                                            Gold Current Account
+                                                        <a class="dropdown-item" asp-page="/savings-account" data-menu="">
+                                                            Target Savings Account
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#" data-menu="">
-                                                            Platinum Current Account
+                                                        <a class="dropdown-item" asp-page="/savings-account" data-menu="">
+                                                            Great Kids Account
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#" data-menu="">
-                                                            Domicilliary Account
+                                                        <a class="dropdown-item" asp-page="/savings-account" data-menu="">
+                                                            Salary Savings Account
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#" data-menu="">
-                                                            Salary Current Account
+                                                        <a class="dropdown-item"  asp-page="/savings-account" data-menu="">
+                                                            Youth Savings Account
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/fixed-income-account" data-menu="">
                                                     Fixed Income Account
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
@@ -124,31 +124,31 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#" data-menu="cards">
+                                        <a class="dropdown-item" asp-page="/cards" data-menu="cards">
                                             Cards
                                             <i class="fa fa-chevron-right icon"></i>
                                         </a>
                                         <ul id="cards" class="sub-menu-item hide">
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/cards" data-menu="">
                                                     Debit Card
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item"asp-page="/cards" data-menu="">
                                                     Prefunded Master Card
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/cards" data-menu="">
                                                     Debit Master Card
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item"asp-page="/cards" data-menu="">
                                                     Master Card
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
@@ -156,7 +156,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#" data-menu="products_services">
+                                        <a class="dropdown-item" asp-page="/more-products-services" data-menu="products_services">
                                             More on Products <br /> & Services
                                             <i class="fa fa-chevron-right icon"></i>
                                         </a>
@@ -171,31 +171,31 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#" data-menu="loans">
+                                        <a class="dropdown-item" asp-page="/loans" data-menu="loans">
                                             Loans
                                             <i class="fa fa-chevron-right icon"></i>
                                         </a>
                                         <ul id="loans" class="sub-menu-item hide">
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/loans" data-menu="">
                                                     Salary Loans
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/loans" data-menu="">
                                                     Salary Advance Loans
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/loans" data-menu="">
                                                     Digital Credit
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#" data-menu="">
+                                                <a class="dropdown-item" asp-page="/loans" data-menu="">
                                                     Credit Card
                                                     <i class="fa fa-chevron-right icon"></i>
                                                 </a>
@@ -218,9 +218,9 @@
                                             <i class="fa fa-chevron-right icon"></i>
                                         </a>
                                         <ul>
-                                            <li><a href="#">Classic Business Account</a></li>
-                                            <li><a href="#">Premium Business Account</a></li>
-                                            <li><a href="#">Platinum Business Account</a></li>
+                                            <li><a asp-page="/business-accounts">Classic Business Account</a></li>
+                                            <li><a asp-page="/business-accounts">Premium Business Account</a></li>
+                                            <li><a asp-page="/business-accounts">Platinum Business Account</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -235,7 +235,7 @@
                                     <li><a asp-page="/mission-vision">Vision/Mission/Values</a></li>
                                     <li><a asp-page="/company-profile">Company Profile</a></li>
                                     <li><a asp-page="/board-of-directors">Board of Directors</a></li>
-                                    <li><a asp-page="/exco Members">Exco Members</a></li>
+                                    <li><a asp-page="/exco-members">Exco Members</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -285,7 +285,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <img src="~/images/Logo.png" style="max-width:205px" />
+                    <img src="@Url.Content("~/images/Logo.png")" style="max-width:205px" />
                 </div>
                 <div class="col-sm">
                     <h6 class="header-title">Personal Banking <span class="fa fa-chevron-down" data-menu="fmnu_personal_account"></span></h6>

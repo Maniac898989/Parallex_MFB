@@ -2,19 +2,29 @@
 @model Parallex_MFB.Web.Pages.fixedincomeaccountModel
 @{
 }
-<div class="container-fluid paralax-header-container">
+<style>
+    .paralax-header-image-restriction {
+        background: url('../images/FixedIncomeAccount.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+</style>
 
-    <div class="row">
+<div class="paralax-header-container">
+    <div class="paralax-header-image-restriction">
 
-        <img class="paralax-header-image-restriction" src="~/images/FixedIncomeAccount.jpg" />
+
 
         <div class="container paralax-header-text paralax-nav-barlink-font">
             <p class="header-font">Fixed Income Accounts</p>
-            
+           
         </div>
 
     </div>
-
 </div>
 
 <section class="section-padding paralax-breadcrum">

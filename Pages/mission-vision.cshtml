@@ -3,37 +3,27 @@
 @{
 }
 
-<style>
-    .paralax-header-container {
-        background: url('../images/pexels-rebrand-cities-1367269.jpg') no-repeat;
-        background-position-y: center;
-        background-position-x: center;
-        background-size: 100%;
-    }
-</style>
+<link href="~/css/about-us.css" rel="stylesheet" />
 
 
-        <img class="paralax-header-image-restriction" src="~/images/OgaMadameMod-min.png" />
-
-    <div class="row">
-
-        <div class="container paralax-header-text paralax-nav-barlink-font">
+<section id="about-us-hero">
+    <div class="container">
+        <div class="row">
             <p class="header-font">Our Vision/Mission/Values</p>
-
         </div>
-
-
     </div>
+</section>
 
-</div>
+
+
 
 <section class="section-padding paralax-breadcrum">
     <div class="container">
         <div class="row">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">About Us</a></li>
+                    <li class="breadcrumb-item"><a asp-page="/~">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-page="/about-us">About Us</a></li>
                     <li class="breadcrumb-item"><a href="#">Our Vision/Mission/Values</a></li>
 
                 </ol>

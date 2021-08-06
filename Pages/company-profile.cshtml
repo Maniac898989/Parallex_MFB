@@ -6,7 +6,7 @@
 
 <style>
     .paralax-header-container {
-        background: url('../images/building-13.jpg') no-repeat;
+        background: url('../images/BuildingMod-min.png') no-repeat;
         background-position-y: center;
         background-position-x: center;
         background-size: 100%;
@@ -16,8 +16,6 @@
 <div class="container-fluid paralax-header-container">
 
     <div class="row">
-
-        <img class="paralax-header-image-restriction" src="~/images/BuildingMod-min.png" />
 
         <div class="container paralax-header-text paralax-nav-barlink-font">
             <p class="header-font">Company Profile</p>
@@ -33,8 +31,8 @@
             <div class="col-md-12 col-sm-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">About us</a></li>
+                        <li class="breadcrumb-item"><a asp-page="/~">Home</a></li>
+                        <li class="breadcrumb-item"><a asp-page="/about-us">About us</a></li>
                         <li class="breadcrumb-item active"><a href="#">Company Profile</a></li>
                     </ol>
                 </nav>

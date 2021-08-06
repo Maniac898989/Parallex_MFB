@@ -28,18 +28,6 @@ namespace Parallex_MFB.Web.Pages
         {
         }
 
-        public JsonResult OnPostSaveInfo(PosiModel position)
-        {
-
-            if (position.Position == "The Chairman")
-            {
-                var info = System.IO.File.ReadAllText(@"~/bod_details/Ezewu.txt");
-
-                return new JsonResult(info);
-            }
-            return new JsonResult(new Result<object> { IsSuccssful = true });
-        }
-
         public async Task<JsonResult> OnGetDirectorInfo(string name)
         {
             if (string.IsNullOrEmpty(name))
@@ -67,8 +55,5 @@ namespace Parallex_MFB.Web.Pages
 
     }
 
-    public class PosiModel
-    {
-        public string Position { get; set; }
-    }
+   
 }
