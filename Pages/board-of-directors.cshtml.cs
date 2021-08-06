@@ -7,33 +7,61 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.IO;
 using Parallex_MFB.Web.Models;
 using Microsoft.AspNetCore.Antiforgery;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Parallex_MFB.Web.Pages
 {
     public class boardModel : PageModel
     {
-        //private readonly IAntiforgery _xsrf;
+        public IHostingEnvironment _env { get; }
 
-        //public boardModel(IAntiforgery xsrf)
-        //{
-        //    _xsrf = xsrf ?? throw new ArgumentNullException(nameof(xsrf));
-        //}
+        public boardModel(IHostingEnvironment env)
+        {
+            this._env = env;
+        }
+
+
         [BindProperty]
         public string position { get; set; }
+
         public void OnGet()
         {
         }
 
         public JsonResult OnPostSaveInfo(PosiModel position)
         {
-            
-            if(position.Position == "The Chairman")
+
+            if (position.Position == "The Chairman")
             {
                 var info = System.IO.File.ReadAllText(@"~/bod_details/Ezewu.txt");
 
                 return new JsonResult(info);
             }
             return new JsonResult(new Result { IsSuccssful = true });
+        }
+
+        public async Task<JsonResult> OnGetDirectorInfo(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+                return new JsonResult(new { isDone = false });
+
+            JsonResult res = null;
+            try
+            {
+                string fileName = _env.WebRootPath + "/bod_details/json/" + name;
+                var fileContent = System.IO.File.ReadAllText(fileName);
+                res = new JsonResult(new { isDone = true, message = fileContent });
+            }
+            catch(FileNotFoundException)
+            {
+                res = new JsonResult(new { isDone = false, message = "Unable to get details" });
+            }
+            catch(Exception ex)
+            {
+                res= new JsonResult(new { isDone = false, message = "An error occured\n" + ex.Message });
+            }
+
+            return await Task.FromResult(res);
         }
 
 
