@@ -1,7 +1,6 @@
 ﻿//var baseurl = "https://localhost:44342/"
 
 $('.btn').on("click", function (e) {
-    debugger;
      const fname = e.currentTarget.getAttribute("fileName");
 
     $.ajax({
