@@ -1087,23 +1087,23 @@ footer .terms_conditions a {
 
     #carousel-section .carousel-item-1 {
         background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
-        background: url('../../../../../images/DSC_2662.png') no-repeat;
+        background: url('../../../../../images/carouselReversed.jpg') no-repeat;
         background-position: 70% top;
-        background-size: 60%;
+        background-size: cover;
     }
 
     #carousel-section .carousel-item-2 {
         background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
-        background: url('../../../../../images/DSC_2622.png') no-repeat;
+        background: url('../../../../../images/CarouselTwos.jpg') no-repeat;
         background-position: 60% top;
-        background-size: 52%;
+        background-size: cover;
     }
 
     #carousel-section .carousel-item-3 {
         background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
-        background: url('../../../../../images/DSC_2795.png') no-repeat;
+        background: url('../../../../../images/sitting-girl.jpg') no-repeat;
         background-position: 59% top;
-        background-size: 53%;
+        background-size: cover;
     }
 
     #carousel-section .btn-parallex-primary {
